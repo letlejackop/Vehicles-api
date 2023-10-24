@@ -1,0 +1,13 @@
+server:
+    port: 9191
+spring:
+    application:
+        name: boogle-maps
+eureka:
+    client:
+        service-url:
+            defaultZone: http://localhost:8181/eureka
+        fetch-registry: true
+        register-with-eureka: true
+
+

@@ -22,6 +22,7 @@ public class PricingService {
             .mapToObj(i -> new Price("USD", randomPrice(), i))
             .collect(Collectors.toMap(Price::getVehicleId, p -> p));
 
+
     /**
      * If a valid vehicle ID, gets the price of the vehicle from the stored array.
      * @param vehicleId ID number of the vehicle the price is requested for.

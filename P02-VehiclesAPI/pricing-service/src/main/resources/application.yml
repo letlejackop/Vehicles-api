@@ -1,0 +1,23 @@
+server:
+    port: 8082
+spring:
+    application:
+        name: pricing-service
+
+    datasource.url: jdbc:h2:mem:prices
+    h2:
+        console:
+            enabled: true
+    data:
+        rest:
+            detection-strategy: all
+
+    jpa:
+        show-sql: true
+
+eureka:
+    client:
+        service-url:
+            defaultZone: http://localhost:8181/eureka
+        fetch-registry: true
+        register-with-eureka: true
